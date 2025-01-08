@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3f3c6d;
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content .logo {
+  width: 200px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #fddb5d;
+  color: #3f3c6d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc33;
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #ffffff00;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #3f3c6d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Quote Section */
+.quote-section {
+  background-color: #ffffff;
+  color: #3f3c6d;
+  padding: 60px 20px;
+}
+
+.quote-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-section label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.quote-section input, 
+.quote-section select, 
+.quote-section textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.quote-section button {
+  background-color: #fddb5d;
+  color: #3f3c6d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quote-section button:hover {
+  background-color: #ffcc33;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px;
+}
+
+.testimonial-item {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #3f3c6d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+  font-style: italic;
+}
+
+.testimonial-item span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #3f3c6d;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-section .contact-info,
+.footer-section .quick-links {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fddb5d;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+

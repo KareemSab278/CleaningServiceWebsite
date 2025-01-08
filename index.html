@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="before-after-style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <img src="img\logo.png" alt="Company Logo" class="logo">
+      <h1>Fresh & Clean Every Time</h1>
+      <p>Your trusted partner in professional cleaning services.</p>
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>With over 10 years of experience, we provide top-notch cleaning services tailored to your needs. Our dedicated team ensures your space stays spotless and fresh.</p>
+      </section>
+      <h2>Our Services</h2>
+        </div>
+    </div>
+  </header>
+
+  <!-- Our Services Section -->
+  <section id="services" class="services-section">
+
+    <div class="service-item">
+      <img src="service1.jpg" alt="Service 1">
+      <h3>Residential Cleaning</h3>
+      <p>Keep your home spotless with our comprehensive residential cleaning services.</p>
+    </div>
+    <div class="service-item">
+      <img src="service2.jpg" alt="Service 2">
+      <h3>Commercial Cleaning</h3>
+      <p>Ensure a clean and professional workspace for your employees and clients.</p>
+    </div>
+    <div class="service-item">
+      <img src="service3.jpg" alt="Service 3">
+      <h3>Window Cleaning</h3>
+      <p>Streak-free window cleaning to brighten up your home or office.</p>
+    </div>
+    <div class="service-item">
+      <img src="service4.jpg" alt="Service 4">
+      <h3>Carpet Cleaning</h3>
+      <p>Deep carpet cleaning to remove dirt, stains, and allergens.</p>
+    </div>
+  </section>
+
+  <!-- Before and After Section -->
+  <div class="top-title">
+    <h1>
+        Before After Comparison Slider
+    </h1>
+</div>
+
+<div class="mainSection">
+
+    <div id="one" class="bal-container">
+        <div class="bal-after">
+            <img src="img\clean toilet.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="img\dirty toilet.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+            </div>
+        </div>
+
+        <div class="bal-handle">
+            <span class=" handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+        </div>
+
+    </div>
+
+    <div id="two" class="bal-container">
+        <div class="bal-after">
+            <img src="img\clean toilet.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="img\dirty toilet.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+
+            </div>
+        </div>
+        <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+
+        </div>
+    </div>
+
+    <div id="three" class="bal-container">
+        <div class="bal-after">
+            <img src="img\clean toilet.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="img\dirty toilet.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+
+            </div>
+        </div>
+        <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+    new BeforeAfter({
+        id: '#one'
+    });
+    new BeforeAfter({
+        id: '#two'
+    });
+    new BeforeAfter({
+        id: '#three'
+    });
+</script>
+
+</body>
+  
+
+  <!-- Request a Quote Section -->
+  <section id="quote" class="quote-section">
+    <h2>Request a Quote</h2>
+    <form id="quote-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Service Type</label>
+      <select id="service" name="service" required>
+        <option value="residential">Residential Cleaning</option>
+        <option value="commercial">Commercial Cleaning</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes"></textarea>
+
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-item">
+      <p>&ldquo;Amazing service! My house has never been this clean.&rdquo;</p>
+      <span>- Jane Doe</span>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="contact-info">
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@cleaningservice.com</p>
+    </div>
+    <div class="quick-links">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#quote">Request a Quote</a>
+      <a href="#testimonials">Testimonials</a>
+    </div>
+    <p>&copy; 2025 Cleaning Services. All Rights Reserved.</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
