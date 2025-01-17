@@ -23,6 +23,45 @@ section {
   text-align: center;
 }
 
+/* Header Section */
+.header-section {
+  background-color: #00aeff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-section .contact-info {
+  display: flex;
+  flex-direction: column; /* Stack links and logo vertically */
+  align-items: center;
+  gap: 20px; /* Space between links and logo */
+}
+
+.header-section .quick-links {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.header-section .quick-links a {
+  color: #fddb5d;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-section .quick-links a:hover {
+  text-decoration: underline;
+  color: #ffcc33;
+}
+
+.header-section .logo {
+  width: 120px; /* Adjust logo size */
+  height: auto;
+}
+
+
+
 /* Hero Section */
 .hero-section {
   /* background: url('hero-background.jpg') no-repeat center center/cover; */
@@ -43,9 +82,8 @@ section {
 }
 
 .hero-content .logo {
-  width: 200px;
+  width: 150px;
   height: auto;
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -194,13 +232,15 @@ section {
 
 .footer-section .contact-info,
 .footer-section .quick-links {
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  font-size: large;
 }
 
 .footer-section a {
   color: #fddb5d;
   text-decoration: none;
   margin: 0 10px;
+  
 }
 
 .footer-section a:hover {

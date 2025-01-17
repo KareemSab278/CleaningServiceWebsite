@@ -8,21 +8,23 @@
   <link rel="stylesheet" href="before-after-style.css">
 </head>
 <body>
-  <alwaysbutton onclick="showPopup()">Contact</alwaysbutton> <!--this button always hovers and on clicked shows contact popup-->
-    <!-- POP UP CARD FOR CONTACT INFO -->
-    <div class="pop-up-card" id="popupCard">
-      <!-- <img src="example.jpg" alt="Pop-Up Image"> -->
-      <h3>Contact</h3>
-      <p>07405076860 - 07404596551</p>
-      <!-- <p></p> -->
-      <button onclick="destroyPopUp()" class="btn-primary">close me</button>
+  <header class="header-section">
+    <div class="contact-info">
+      <div class="quick-links">
+        <a href="#testimonials"><b>Contact Us</b></a>
+        <a href="#services"><b>Services</b></a>
+        <a href="#testimonials"><b>Testimonials</b></a>
+      </div>
+      <img src="img/logo.png" alt="Company Logo" class="logo">
     </div>
+  </header>
+  
+  
     <!-- POP UP CARD FOR CONTACT INFO -->
 
   <!-- Hero Section -->
   <header class="hero-section">
     <div class="hero-content">
-      <img src="img\logo.png" alt="Company Logo" class="logo">
       <h1>Fresh & Clean Every Time</h1>
       <p>Your trusted partner in professional cleaning services.</p>
       <section id="about" class="about-section">
@@ -56,7 +58,7 @@
     <div class="service-item">
       
       <h3>Anything Else!</h3>
-      <p>Just send us an request and we'll take care of it!</p>
+      <p>Just send us a request and we'll take care of it!</p>
     </div>
 
     <!-- <div class="service-item">
@@ -77,7 +79,7 @@
 
     <div id="one" class="bal-container">
         <div class="bal-after">
-            <img src="img\clean toilet.jpg">
+            <img src="img\cooker after.jpg">
             <div class="bal-afterPosition afterLabel">
                 After
             </div>
@@ -85,7 +87,7 @@
 
         <div class="bal-before">
             <div class="bal-before-inset">
-                <img src="img\dirty toilet.jpg">
+                <img src="img\cooker before.jpg">
                 <div class="bal-beforePosition beforeLabel">
                     Before
                 </div>
@@ -203,7 +205,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function() {
-      emailjs.init("GFTxEYcjO9POuqNvO");
+      emailjs.init("vRKQs0TU6X5RKgpNx");
     })();
 </script>
 
@@ -223,14 +225,9 @@
   <!-- Footer -->
   <footer class="footer-section">
     <div class="contact-info">
-      <p>Phone: (123) 456-7890 - Email: contact@cleaningservice.com</p>
-    </div>
-    <div class="quick-links">
-      <a href="#about">About Us</a><a href="#services">Services</a>
-      <a href="#quote">Request a Quote</a>
-      <a href="#testimonials">Testimonials</a>
-    </div>
-    <p>&copy; 2025 Vera Cleaning Ltd.</p>
+      <h2 style="color: #ffcc33;">Contact Us</h2>
+      <p><b >Phone:</b> 07404596551 <br><b> WhatsApp: </b>07405076860 <br><b>Email:</b> contact@cleaningservice.com</p><br>
+    <p style="color: #ffcc33;">&copy; 2025 Vera Cleaning Ltd.</p>
   </footer>
 </body>
 <script src="script.js"></script>

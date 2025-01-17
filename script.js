@@ -86,7 +86,7 @@ function destroyPopUp() {
         popupCard.style.animation = 'slide-out 0.9s ease forwards';
         setTimeout(() => {
             popupCard.style.display = 'none';
-        }, 900);
+        }, 0);
     } else {
         console.error("Popup card element not found.");
     }
@@ -101,11 +101,11 @@ function sendMail() {
         service: document.getElementById('service').value,
     };
 
-    emailjs.send("service_mdzlwcl", "template_yyw64of", parms)
+    emailjs.send("service_z2wgy8w", "template_xd7hgja", parms)
         .then(() => alert("Thank you for your request!"))
         .catch((error) => console.error("Failed to send email:", error));
 }
 
-(function () {
-    emailjs.init("qZh2Hud-EnuEfRI00");
-})();
+// (function () {
+//     emailjs.init("vRKQs0TU6X5RKgpNx");
+// })();
