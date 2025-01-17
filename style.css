@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #3f3c6d;
+  background-color: #00aeff;
   color: white;
 }
 
@@ -25,22 +25,27 @@ section {
 
 /* Hero Section */
 .hero-section {
-  background: url('hero-background.jpg') no-repeat center center/cover;
-  height: 50vh;
+  /* background: url('hero-background.jpg') no-repeat center center/cover; */
+  min-height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .hero-content {
+  padding: 20px;
   max-width: 600px;
+  box-sizing: border-box;
 }
 
 .hero-content .logo {
   width: 200px;
   height: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -54,12 +59,13 @@ section {
   margin-bottom: 20px;
 }
 
+
 .btn-primary {
   background-color: #fddb5d;
-  color: #3f3c6d;
-  padding: 10px 20px;
+  color: #253944;
+  padding: 20px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
@@ -99,7 +105,7 @@ section {
   margin: 20px;
   padding: 20px;
   background-color: #ffffff;
-  color: #3f3c6d;
+  color: #253944;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -113,7 +119,7 @@ section {
 /* Quote Section */
 .quote-section {
   background-color: #ffffff;
-  color: #3f3c6d;
+  color: #253944;
   padding: 60px 20px;
 }
 
@@ -135,16 +141,16 @@ section {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 16px;
 }
 
 .quote-section button {
   background-color: #fddb5d;
-  color: #3f3c6d;
-  padding: 10px 20px;
+  color: #253944;
+  padding: 10px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -180,7 +186,7 @@ section {
 
 /* Footer Section */
 .footer-section {
-  background-color: #3f3c6d;
+  background-color: #00aeff;
   padding: 20px;
   text-align: center;
   color: #ffffff;
@@ -199,6 +205,85 @@ section {
 
 .footer-section a:hover {
   text-decoration: underline;
+}
+
+/* From Uiverse.io by barisdogansutcu  -  gotta give credit */ 
+alwaysbutton {
+  position: fixed;
+  bottom: 20px;  /* Adjust as needed */
+  right: 20px;   /* Adjust as needed */
+  z-index: 1000;
+  padding: 10px 20px;
+  /* background-color: #3f3c6d; */
+  color: #253944;
+  border: none;
+  border-radius: 5px;
+  /* cursor: pointer; */
+
+  padding: 15px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  /* border: 0; */
+  background-color: #fddb5d;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+alwaysbutton:hover {
+  letter-spacing: 3px;
+  background-color: #ffe68b;
+  color: #3c5d6d(0, 0%, 100%);
+  box-shadow: rgb(253 219 93) 0px 7px 29px 0px;
+}
+
+alwaysbutton:active {
+  letter-spacing: 3px;
+  background-color: rgb(165, 142, 61);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(253 219 93) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* Pop-Up Card */
+.pop-up-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #253944;
+  border-radius: 10px;
+  box-shadow: 100 100 100px rgba(0, 0, 0, 0.888);
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 20;
+  display: none;
+  animation: slide-up 0.5s ease forwards;
+}
+
+/* Pop-Up Card Image */
+.pop-up-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 20 20 10px rgba(0, 0, 0, 0.795);
+}
+
+/* Slide-up animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 

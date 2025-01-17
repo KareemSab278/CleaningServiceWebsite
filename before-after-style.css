@@ -15,20 +15,34 @@
     font-size: 1.5rem;
 }
 
+
+.bal-container {
+    position: relative;
+    width: 100%; /* Full width of the parent */
+    aspect-ratio: 2 / 3; /* Ensures consistent 2:3 ratio */
+    overflow: hidden; /* Prevents content from spilling out */
+    max-height: 100vh; /* Optional: Prevent container from becoming taller than the viewport */
+}
+
+.bal-container img {
+    width: 100%; /* Fit the width of the container */
+    height: auto; /* Maintain image aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+
+
 @media all and (max-width: 479px) {
     .mainSection {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 700px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
-        margin: 10px 0;
+        margin: 40px 0;
     }
 }
 
@@ -36,13 +50,10 @@
     .mainSection {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 800px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
         margin: 10px 0;
@@ -53,13 +64,10 @@
     .mainSection {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 1000px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
         margin: 10px 0;
@@ -70,13 +78,10 @@
     .mainSection {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 1100px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
         margin: 10px 0;
@@ -87,13 +92,10 @@
     .mainSection {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 500px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
         margin: 0 10px;
@@ -104,13 +106,10 @@
     .mainSection {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
         width: 100%;
-        height: 500px;
-        padding: 10px;
+        padding: 40px;
+        /* Remove height and let content define it */
     }
     .bal-container {
         margin: 0 10px;
@@ -119,15 +118,6 @@
 
 
 /* Before After Container */
-
-.bal-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: grab;
-    overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .bal-after {
     display: block;

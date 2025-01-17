@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="before-after-style.css">
 </head>
 <body>
+  <alwaysbutton onclick="showPopup()">Contact</alwaysbutton> <!--this button always hovers and on clicked shows contact popup-->
+    <!-- POP UP CARD FOR CONTACT INFO -->
+    <div class="pop-up-card" id="popupCard">
+      <!-- <img src="example.jpg" alt="Pop-Up Image"> -->
+      <h3>Contact</h3>
+      <p>07405076860 - 07404596551</p>
+      <!-- <p></p> -->
+      <button onclick="destroyPopUp()" class="btn-primary">close me</button>
+    </div>
+    <!-- POP UP CARD FOR CONTACT INFO -->
+
   <!-- Hero Section -->
   <header class="hero-section">
     <div class="hero-content">
@@ -17,35 +28,42 @@
       <section id="about" class="about-section">
         <h2>About Us</h2>
         <p>With over 10 years of experience, we provide top-notch cleaning services tailored to your needs. Our dedicated team ensures your space stays spotless and fresh.</p>
+        <br><br><br>
+        <a class="btn-primary" href="#quote" style="color: black;">Request a Quote</a>
       </section>
-      <h2>Our Services</h2>
+      
         </div>
     </div>
   </header>
 
   <!-- Our Services Section -->
-  <section id="services" class="services-section">
 
+    <h2>Our Services</h2>
+
+  <section id="services" class="services-section">
+    
+    <br>
     <div class="service-item">
-      <img src="service1.jpg" alt="Service 1">
+      <!-- <img src="service1.jpg" alt="Service 1"> -->
       <h3>Residential Cleaning</h3>
       <p>Keep your home spotless with our comprehensive residential cleaning services.</p>
     </div>
     <div class="service-item">
-      <img src="service2.jpg" alt="Service 2">
+      <!-- <img src="service2.jpg" alt="Service 2"> -->
       <h3>Commercial Cleaning</h3>
       <p>Ensure a clean and professional workspace for your employees and clients.</p>
     </div>
     <div class="service-item">
-      <img src="service3.jpg" alt="Service 3">
-      <h3>Window Cleaning</h3>
-      <p>Streak-free window cleaning to brighten up your home or office.</p>
+      
+      <h3>Anything Else!</h3>
+      <p>Just send us an request and we'll take care of it!</p>
     </div>
-    <div class="service-item">
-      <img src="service4.jpg" alt="Service 4">
-      <h3>Carpet Cleaning</h3>
+
+    <!-- <div class="service-item">
+      <img src="service4.jpg" alt="Service 4"> -->
+      <!-- <h3>Carpet Cleaning</h3>
       <p>Deep carpet cleaning to remove dirt, stains, and allergens.</p>
-    </div>
+    </div> -->
   </section>
 
   <!-- Before and After Section -->
@@ -83,14 +101,14 @@
 
     <div id="two" class="bal-container">
         <div class="bal-after">
-            <img src="img\clean toilet.jpg">
+            <img src="img\shower after.jpeg">
             <div class="bal-afterPosition afterLabel">
                 After
             </div>
         </div>
         <div class="bal-before">
             <div class="bal-before-inset">
-                <img src="img\dirty toilet.jpg">
+                <img src="img\shower before.jpeg">
                 <div class="bal-beforePosition beforeLabel">
                     Before
                 </div>
@@ -106,14 +124,14 @@
 
     <div id="three" class="bal-container">
         <div class="bal-after">
-            <img src="img\clean toilet.jpg">
+            <img src="img\toilet after.jpeg">
             <div class="bal-afterPosition afterLabel">
                 After
             </div>
         </div>
         <div class="bal-before">
             <div class="bal-before-inset">
-                <img src="img\dirty toilet.jpg">
+                <img src="img\toilet before.jpeg">
                 <div class="bal-beforePosition beforeLabel">
                     Before
                 </div>
@@ -125,7 +143,9 @@
             <span class="handle-right-arrow"></span>
 
         </div>
+        
     </div>
+    
 </div>
 
 
@@ -152,26 +172,40 @@
     <form id="quote-form">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
-
+    
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required>
-
+    
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" required>
-
+    
       <label for="service">Service Type</label>
       <select id="service" name="service" required>
         <option value="residential">Residential Cleaning</option>
         <option value="commercial">Commercial Cleaning</option>
-        <!-- Add more options as needed -->
       </select>
-
+    
       <label for="notes">Additional Notes</label>
-      <textarea id="notes" name="notes"></textarea>
-
+      <textarea id="message" name="notes"></textarea>
+    
       <button type="submit" class="btn-primary">Submit</button>
     </form>
+    
+    <script>
+      document.getElementById("quote-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        sendMail();
+      });
+    </script>
+    
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("GFTxEYcjO9POuqNvO");
+    })();
+</script>
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials-section">
@@ -183,19 +217,20 @@
     <!-- Add more testimonials as needed -->
   </section>
 
+
+  
+
   <!-- Footer -->
   <footer class="footer-section">
     <div class="contact-info">
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: contact@cleaningservice.com</p>
+      <p>Phone: (123) 456-7890 - Email: contact@cleaningservice.com</p>
     </div>
     <div class="quick-links">
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
+      <a href="#about">About Us</a><a href="#services">Services</a>
       <a href="#quote">Request a Quote</a>
       <a href="#testimonials">Testimonials</a>
     </div>
-    <p>&copy; 2025 Cleaning Services. All Rights Reserved.</p>
+    <p>&copy; 2025 Vera Cleaning Ltd.</p>
   </footer>
 </body>
 <script src="script.js"></script>
