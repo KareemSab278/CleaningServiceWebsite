@@ -1,4 +1,4 @@
-console.log('\nSite developed by: \n-------------------------\nKareem Elsabrouty \nkareemsab278@gmail.com \nhttps://github.com/KareemSab278');
+console.log('\nSite developed by: \n-------------------------\nKareem Elsabrouty\nSandeep Rahal \nkareemsab278@gmail.com');
 
 document.addEventListener('DOMContentLoaded', () => {
   const elementsToAnimate = document.querySelectorAll('section, h1, h2, h3, p, .service-item, .testimonial-item');
