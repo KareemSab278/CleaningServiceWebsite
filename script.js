@@ -101,7 +101,7 @@ function sendMail() {
         service: document.getElementById('service').value,
     };
 
-    emailjs.send("service_z2wgy8w", "template_xd7hgja", parms)
+    emailjs.send("service_e5lds3m", "template_jog3obz", parms)//l or i???
         .then(() => alert("Thank you for your request!"))
         .catch((error) => console.error("Failed to send email:", error));
 }
